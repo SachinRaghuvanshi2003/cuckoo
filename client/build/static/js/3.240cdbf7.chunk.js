@@ -1,0 +1,2 @@
+(this.webpackJsonpclient=this.webpackJsonpclient||[]).push([[3],{133:function(e,a,t){},134:function(e,a,t){"use strict";t.r(a);var n=t(0),c=t.n(n),s=t(47),l=t.n(s);t(133);a.default=function(){return c.a.createElement("div",{className:"watermark"},c.a.createElement("img",{className:"logoImage",src:l.a,alt:"Collab Logo"}),c.a.createElement("span",{className:"logoText"},"CodeRX"))}}}]);
+//# sourceMappingURL=3.240cdbf7.chunk.js.map
