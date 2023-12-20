@@ -16,21 +16,13 @@ const Navigation = () => {
                                     <img src={cuckoologo} alt="Cuckoo Logo"/>
                                 </div>
                                 <div className="logoText">
-                                    cuckoo
+                                    collab
                                 </div>
                             </div>
                         </a>
                         </div>
                     </div>
-                    <div className="githubStar">
-                    <GitHubButton href="https://github.com/somikdatta/cuckoo" 
-                            data-color-scheme="no-preference: light; light: light; dark: dark;" 
-                            data-icon="octicon-star" data-size="large" data-show-count="true" 
-                            aria-label="Star somikdatta/cuckoo on GitHub"
-                    >
-                    Star
-                    </GitHubButton>
-                    </div>
+                   
                 </div>
             </div>
         </header>

@@ -58,21 +58,22 @@ function App() {
         <div className="hero flex flex-column">
             <div>
                 <div className="welcomeText">
-                    Anonymous Video Calls
+                    Ideate. Collaborate. Discuss.
                 </div>
+                <img src='https://cdn.pixabay.com/animation/2022/09/09/08/45/08-45-56-711_512.gif' height="280" width="400"></img>
                 <div className="descriptionText">
-                    across the world for free
+                    with the fellow developers and coders.
                 </div>
             </div>
             <div>
-                <div className="actionText">Who do you want to call, <span className={copied?"username highlight copied":"username highlight"} onClick={()=>{showCopiedMessage()}}>{yourID}</span>?</div>
+                <div className="actionText">Who do you want to collab with, <span className={copied?"username highlight copied":"username highlight"} onClick={()=>{showCopiedMessage()}}>{yourID}</span>?</div>
             </div>
             <div className="callBox flex">
-                <input type="text" placeholder="Friend ID" value={receiverID} onChange={e => setReceiverID(e.target.value)} className="form-input"/>
+                <input type="text" placeholder="Developer Id" value={receiverID} onChange={e => setReceiverID(e.target.value)} className="form-input"/>
                 <button onClick={() => callPeer(receiverID.toLowerCase().trim())} className="primaryButton">Call</button>
             </div>
             <div>
-                To call your friend, ask them to open Cuckoo in their browser. <br/>
+                To call your fellow developer, ask them to open CodeRX Collab in their browser. <br/>
                 Send your username (<span className="username">{yourID}</span>) and wait for their call <span style={{fontWeight: 600}}>OR</span> enter their username and hit call!
             </div>
         </div>
@@ -195,7 +196,7 @@ function App() {
         })
       })
       .catch(()=>{
-        setModalMessage('You cannot place/ receive a call without granting video and audio permissions! Please change your settings to use Cuckoo.')
+        setModalMessage('You cannot place/ receive a call without granting video and audio permissions! Please change your settings to use Collab.')
         setModalVisible(true)
       })
     } else {
@@ -240,7 +241,7 @@ function App() {
       })
     })
     .catch(()=>{
-      setModalMessage('You cannot place/ receive a call without granting video and audio permissions! Please change your settings to use Cuckoo.')
+      setModalMessage('You cannot place/ receive a call without granting video and audio permissions! Please change your settings to use CodeRX Collab.')
       setModalVisible(true)
     })
   }
